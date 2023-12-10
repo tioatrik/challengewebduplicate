@@ -334,7 +334,7 @@ ul li {
 
   /* card content */
   .card-content {
-    margin-top: -100px;
+    margin-top: -200px;
     flex-direction: column;
     box-sizing: border-box;
     padding-bottom: 10px;
