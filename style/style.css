@@ -1,0 +1,458 @@
+/* css reset start */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* css reset end */
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+}
+
+.navbar {
+  background-color: crimson;
+  padding: 0px 50px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+ul a {
+  text-decoration: none;
+  color: white;
+}
+
+ul li {
+  margin: 10px;
+  padding: 12px;
+  font-weight: 900;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.btn-masuk {
+  background-color: white;
+  color: crimson;
+}
+
+.btn-masuk a {
+  color: crimson;
+}
+
+.btn-masuk:hover {
+  opacity: 90%;
+}
+
+/* start hero */
+
+.hero {
+  background-color: crimson;
+  height: 80vh;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px 0px;
+  color: white;
+}
+
+.hero-content {
+  margin-top: 140px;
+  order: 1;
+  width: 550px;
+}
+.hero h1 {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 60px;
+}
+
+.hero p {
+  margin-top: 10px;
+  line-height: 25px;
+}
+
+.hero-img {
+  margin-top: 80px;
+  order: 2;
+}
+.hero-img img {
+  max-width: 500px;
+}
+
+/*  */
+.card-content {
+  background-color: crimson;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  padding-bottom: 30px;
+}
+
+.card-content h1 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #797979;
+}
+.card-satu {
+  width: 45%;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  margin-left: 100px;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.card-dua {
+  width: 45%;
+  margin-left: 10px;
+  margin-right: 100px;
+  display: flex;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  align-items: center;
+}
+
+/* start breadcrums */
+.breadcrums {
+  height: 50vh;
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.dalam {
+  background-image: url("https://images.unsplash.com/photo-1682685797140-c17807f8f217?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  width: 80%;
+  height: 90%;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+/* media query start */
+@media only screen and (max-width: 600px) {
+  .listnav {
+    display: none;
+  }
+
+  .navbar {
+    padding: 0px 15px;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  /* hero */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 90vh;
+  }
+  .hero-img img {
+    width: 300px;
+  }
+  .hero-img {
+    order: 1;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-content {
+    box-sizing: border-box;
+    padding-left: 38px;
+    margin: auto;
+    order: 2;
+    background-color: crimson;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+    font-weight: 800;
+    width: 300px;
+    line-height: 30px;
+  }
+
+  .hero-content p {
+    font-size: 13px;
+    width: 300px;
+    line-height: 20px;
+  }
+
+  /* card content */
+  .card-content {
+    margin-top: -100px;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+  }
+  .card-content p {
+    display: none;
+  }
+
+  .card-content h1 {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .card-content img {
+    width: 50px;
+  }
+  .card-satu {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 10px;
+    align-items: center;
+    margin-left: 17px;
+    margin-bottom: 10px;
+  }
+
+  .card-dua {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    width: 90% !important;
+    margin-left: 17px;
+    width: 100%;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+
+  /* Anda bisa menambahkan aturan CSS tambahan untuk mengubah tata letak atau gaya lainnya */
+}
+
+/* tablet */
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Aturan CSS untuk tablet di sini */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+  }
+  .hero-img img {
+    width: 300px;
+  }
+  .hero-img {
+    order: 1;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-content {
+    box-sizing: border-box;
+    margin: auto;
+    order: 2;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .hero-content h1 {
+    margin: auto;
+    font-size: 25px;
+    font-weight: 800;
+    width: 70%;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .hero-content p {
+    margin: auto;
+    font-size: 15px;
+    width: 70%;
+    line-height: 25px;
+  }
+
+  /* card */
+  .card-content img {
+    width: 50px;
+    margin-right: 10px;
+  }
+  .card-content {
+    padding: 0px !important;
+    margin-top: -600px;
+  }
+  .card-content p {
+    display: none;
+  }
+
+  .card-content h1 {
+    font-size: 17px;
+    margin-top: 10px;
+  }
+
+  .card-satu {
+    width: 70% !important;
+    margin-left: 10px;
+    padding: 20px 30px;
+  }
+  .card-dua {
+    padding: 20px;
+    margin: 0px;
+    width: 70%;
+    margin-right: 10px;
+  }
+
+  /* Anda bisa menambahkan aturan CSS tambahan untuk mengubah tata letak atau gaya lainnya */
+}
